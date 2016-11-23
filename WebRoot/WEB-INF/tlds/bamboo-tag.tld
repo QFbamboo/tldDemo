@@ -13,7 +13,17 @@
 	</tag>
 	<tag>
 		<name>myTag2</name>
-		<tag-class>cn.bamboo.tag.MyTag2</tag-class>
+		<tag-class>cn.bamboo.tag.MyTag2</tag-class>	
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>myTag3</name>
+		<tag-class>cn.bamboo.tag.MyTag3</tag-class>	
+		<body-content>scriptless</body-content>
+	</tag>
+	<tag>
+		<name>myTag4</name>
+		<tag-class>cn.bamboo.tag.MyTag4</tag-class>	
 		<body-content>empty</body-content>
 	</tag>
 </taglib>

@@ -15,7 +15,7 @@
 
 <title>My JSP 'index.jsp' starting page</title>
 <meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache"> 
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
@@ -28,5 +28,19 @@
 	<h1><it:myTag1 /></h1>
 	<br>
 	<h1><it:myTag2/></h1>
+	
+	<hr/>
+	<%
+		request.setAttribute("he","bamboo");
+	%>
+	<h3>
+		<it:myTag3>
+			${he }
+		</it:myTag3>
+	</h3>
+		<it:myTag4/>
+	<h3>
+		hehe
+	</h3>
 </body>
 </html>
