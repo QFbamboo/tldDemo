@@ -15,7 +15,7 @@
 
 <title>My JSP 'index.jsp' starting page</title>
 <meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache"> 
+<meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
@@ -25,22 +25,33 @@
 </head>
 
 <body>
-	<h1><it:myTag1 /></h1>
-	<br>
-	<h1><it:myTag2/></h1>
+
+	<it:myTag5 test="${empty param.xxx}">
+			<it:myTag4 />
+	</it:myTag5>
+		
+		<!--此标签执行后，下面的内容将不显示  -->
 	
-	<hr/>
+
+	<h1>
+		<it:myTag1 />
+	</h1>
+	<br>
+	<h1>
+		<it:myTag2 />
+	</h1>
+
+	<hr />
 	<%
-		request.setAttribute("he","bamboo");
+		request.setAttribute("he", "bamboo");
 	%>
 	<h3>
 		<it:myTag3>
 			${he }
 		</it:myTag3>
 	</h3>
-		<it:myTag4/>
-	<h3>
-		hehe
-	</h3>
+	<it:myTag4 />
+	<!--此标签执行后，下面的内容将不显示  -->
+	<h3>hehe</h3>
 </body>
 </html>
